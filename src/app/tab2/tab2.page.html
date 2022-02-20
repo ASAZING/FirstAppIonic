@@ -4,6 +4,9 @@
       Inventario
     </ion-title>
   </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
@@ -12,6 +15,86 @@
       <ion-title size="large">Inventario</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-list lines="none">
+    <ion-item button>
+      <ion-avatar slot="start">
+        <img src="https://th.bing.com/th/id/OIP.MOniECFhWzJ-2w6kbndWgAHaE8?pid=ImgDet&rs=1">
+      </ion-avatar>
+      <ion-label>
+        <ion-text >
+          <h1>Producto</h1>
+        </ion-text>
+        <ion-text color="light">
+          <h6>SKU: AS61666A51</h6>
+        </ion-text>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div>
+                <p>Categoria</p>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <p>Categoria</p>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <p>Categoria</p>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <p>Categoria</p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div>
+                <ion-badge color="success" slot="start">Etiqueta</ion-badge>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <ion-badge color="warning" slot="start">Etiqueta</ion-badge>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <ion-badge color="danger" slot="start">Etiqueta</ion-badge>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <ion-badge color="danger" slot="start">Etiqueta</ion-badge>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div>
+                <p>Presio: $500.000</p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+      <ion-button (click)="onClick()" fill="clear">
+        <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
 
-  <app-explore-container name="Inventario"></app-explore-container>
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
 </ion-content>
